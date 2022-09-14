@@ -8,7 +8,7 @@ namespace Greggs.Products.Application.Validators
         public GetProductsRequestValidator()
         {
             this.RuleFor(x => x.PageStart)
-                .GreaterThan(0);
+                .GreaterThanOrEqualTo(0);
 
             this.RuleFor(x => x.PageSize)
                 .GreaterThan(0);

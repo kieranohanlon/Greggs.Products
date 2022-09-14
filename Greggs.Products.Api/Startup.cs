@@ -2,6 +2,8 @@ using FluentValidation;
 using FluentValidation.AspNetCore;
 using Greggs.Products.Application.QueryHandlers;
 using Greggs.Products.Application.Validators;
+using Greggs.Products.Infrastructure;
+using Greggs.Products.Models;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -51,6 +53,8 @@ public class Startup
 
         //MediatR
         services.AddMediatR(typeof(GetProductsQueryHandler).Assembly);
+
+        services.AddScoped<IDataAccess<Product>, ProductAccess>();
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

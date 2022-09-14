@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Greggs.Products.Application\Greggs.Products.Application.csproj" />
+    <ProjectReference Include="..\Greggs.Products.Infrastructure\Greggs.Products.Infrastructure.csproj" />
     <ProjectReference Include="..\Greggs.Products.Models\Greggs.Products.Models.csproj" />
   </ItemGroup>
 
