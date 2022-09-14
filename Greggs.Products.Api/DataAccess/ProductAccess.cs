@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
-using Greggs.Products.Api.Models;
+using Greggs.Products.Models;
 
 namespace Greggs.Products.Api.DataAccess;
 
