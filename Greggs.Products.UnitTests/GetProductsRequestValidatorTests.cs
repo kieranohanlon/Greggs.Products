@@ -9,7 +9,7 @@ public class GetProductsRequestValidatorTests
     private readonly GetProductsRequestValidator validator = new GetProductsRequestValidator();
 
     //TODO - these tests are fairly simple, would consider using Moq and FluentAssertions if needed
-    //TODO - Not all possible unit tests are done here, just some examples
+    //TODO - Not all possible unit tests are done here, just some examples - certainly extra tests would be good for the currency conversion code
 
     [Fact]
     public void ValidateWithNegativePageSize()

@@ -55,6 +55,7 @@ public class Startup
         services.AddMediatR(typeof(GetProductsQueryHandler).Assembly);
 
         services.AddScoped<IDataAccess<Product>, ProductAccess>();
+        services.AddScoped<ICurrencyAccess, CurrencyAccess>();
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

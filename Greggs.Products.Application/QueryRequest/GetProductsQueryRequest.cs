@@ -7,5 +7,6 @@ namespace Greggs.Products.Application.QueryRequest
     {
         public int PageStart { get; set; }
         public int PageSize { get; set; }
+        public string? CurrencyCode { get; set; }
     }
 }
